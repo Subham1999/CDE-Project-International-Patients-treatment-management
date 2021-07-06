@@ -106,7 +106,7 @@ public class JwtAuthenticationController {
 	 * @return
 	 */
 	@PostMapping(value = "/authorize")
-	public ResponseEntity<?> authorizeTheRequest(
+	public ResponseEntity<String> authorizeTheRequest(
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader) {
 		System.out.println("Inside authorize ==============" + requestTokenHeader);
 		String jwtToken = null;

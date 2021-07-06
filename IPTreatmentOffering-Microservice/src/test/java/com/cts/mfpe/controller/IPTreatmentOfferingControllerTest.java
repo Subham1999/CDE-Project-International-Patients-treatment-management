@@ -84,7 +84,7 @@ class IPTreatmentOfferingControllerTest {
 	@DisplayName("Test getAllIPTreatmentPackage() of the Controller with valid token ")
 	void testGetAllIPTreatmentPackageWithValidToken() throws Exception {
 
-		when(client.authorizeTheRequest("@uthoriz@tionToken123")).thenReturn(true);
+//		when(client.authorizeTheRequest("@uthoriz@tionToken123")).thenReturn(true);
 		when(ipOfferingService.findAllIPTreatmentPackages()).thenReturn(Arrays.asList(pack1, pack2));
 
 		this.mockMvc.perform(
@@ -99,7 +99,7 @@ class IPTreatmentOfferingControllerTest {
 	@DisplayName("Test getAllIPTreatmentPackage() of the Controller with invalid token ")
 	void testGetAllIPTreatmentPackageTestWithInvalidToken() throws Exception {
 
-		when(client.authorizeTheRequest("wrongtoken")).thenReturn(false);
+//		when(client.authorizeTheRequest("wrongtoken")).thenReturn(false);
 
 		this.mockMvc.perform(get("/ipTreatmentPackages").header("Authorization", "wrongtoken"))
 				.andExpect(status().isForbidden());
@@ -119,7 +119,7 @@ class IPTreatmentOfferingControllerTest {
 	@DisplayName("Test getIPTreatmentPackageByName() of the Controller with valid token")
 	void testGetIPTreatmentPackageByNameWithValidToken() throws Exception {
 
-		when(client.authorizeTheRequest("@uthoriz@tionToken123")).thenReturn(true);
+//		when(client.authorizeTheRequest("@uthoriz@tionToken123")).thenReturn(true);
 		when(ipOfferingService.findIPTreatmentPackageByName(any(), anyString())).thenReturn(pack1);
 
 		this.mockMvc
@@ -135,7 +135,7 @@ class IPTreatmentOfferingControllerTest {
 	@DisplayName("Test invalid getIPTreatmentPackageByName() of the Controller with valid token")
 	void testGetInvalidIPTreatmentPackageByNameWithValidToken() throws Exception {
 
-		when(client.authorizeTheRequest("@uthoriz@tionToken123")).thenReturn(true);
+//		when(client.authorizeTheRequest("@uthoriz@tionToken123")).thenReturn(true);
 		when(ipOfferingService.findIPTreatmentPackageByName(any(), anyString())).thenThrow(new IPTreatmentPackageNotFoundException("IP Treatment Package not found"));
 
 		this.mockMvc
@@ -148,7 +148,7 @@ class IPTreatmentOfferingControllerTest {
 	@DisplayName("Test getIPTreatmentPackageByName() of the Controller with invalid token")
 	void testGetIPTreatmentPackageByNameWithInvalidToken() throws Exception {
 
-		when(client.authorizeTheRequest("wrongtoken")).thenReturn(false);
+//		when(client.authorizeTheRequest("wrongtoken")).thenReturn(false);
 
 		this.mockMvc.perform(get("/ipTreatmentPackageByName/ORTHOPAIDICS/Package 1")
 				.header("Authorization", "wrongtoken")).andExpect(status().isForbidden());
@@ -169,7 +169,7 @@ class IPTreatmentOfferingControllerTest {
 	@DisplayName("Test getAllSpecialist() of the Controller with valid token")
 	void getAllSpecialistWithValidTokenTest() throws Exception {
 
-		when(client.authorizeTheRequest("@uthoriz@tionToken123")).thenReturn(true);
+//		when(client.authorizeTheRequest("@uthoriz@tionToken123")).thenReturn(true);
 		when(ipOfferingService.findAllSpecialists()).thenReturn(Arrays.asList(specialist1, specialist2));
 
 		this.mockMvc.perform(get("/specialists").header("Authorization", "@uthoriz@tionToken123"))
@@ -181,7 +181,7 @@ class IPTreatmentOfferingControllerTest {
 	@DisplayName("Test getAllSpecialist() of the Controller with invalid token")
 	void getAllSpecialistTestWithInvalidToken() throws Exception {
 
-		when(client.authorizeTheRequest("wrongtoken")).thenReturn(false);
+//		when(client.authorizeTheRequest("wrongtoken")).thenReturn(false);
 
 		this.mockMvc.perform(get("/specialists").header("Authorization", "wrongtoken"))
 				.andExpect(status().isForbidden());
