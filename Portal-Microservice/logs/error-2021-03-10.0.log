@@ -1,0 +1,217 @@
+2021-03-10_10-28-34 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRegisterController': Unsatisfied dependency expressed through field 'client'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cts.portal.feign.AuthorisingClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cts.portal.PortalMicroserviceApplication.main(PortalMicroserviceApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cts.portal.feign.AuthorisingClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1884)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:267)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:309)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:335)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:315)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169)
+	... 36 common frames omitted
+2021-03-10_10-29-58 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRegisterController': Unsatisfied dependency expressed through field 'client'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cts.portal.feign.AuthorisingClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cts.portal.PortalMicroserviceApplication.main(PortalMicroserviceApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cts.portal.feign.AuthorisingClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1884)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:267)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:309)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:335)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:315)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169)
+	... 36 common frames omitted
+2021-03-10_12-53-05 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_12-53-05 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - pod2-ipoffering-ld-1381076981.us-east-2.elb.amazonaws.com executing GET http://pod2-ipoffering-ld-1381076981.us-east-2.elb.amazonaws.com/ipTreatmentOffering/specialists
+2021-03-10_12-53-05 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_12-53-05 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - pod2-ipoffering-ld-1381076981.us-east-2.elb.amazonaws.com executing GET http://pod2-ipoffering-ld-1381076981.us-east-2.elb.amazonaws.com/ipTreatmentOffering/ipTreatmentPackages
+2021-03-10_15-44-02 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_15-44-02 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - pod2-authlb-1487844017.us-east-2.elb.amazonaws.com executing GET http://pod2-authlb-1487844017.us-east-2.elb.amazonaws.com/ipTreatment/getAllTreatmentPlan
+2021-03-10_15-44-02 [http-nio-8500-exec-8] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_15-44-02 [http-nio-8500-exec-8] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T10:19:41.571+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_15-44-02 [http-nio-8500-exec-3] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_15-44-02 [http-nio-8500-exec-3] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/ipTreatmentPackages] [IPTreatmentOfferingClient#getAllIPTreatmentPackage(String)]: [{"timestamp":"2021-03-10T10:45:22.921+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6523 bytes)]
+2021-03-10_15-44-02 [http-nio-8500-exec-2] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_15-44-02 [http-nio-8500-exec-2] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/ipTreatmentPackages] [IPTreatmentOfferingClient#getAllIPTreatmentPackage(String)]: [{"timestamp":"2021-03-10T10:45:38.394+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6523 bytes)]
+2021-03-10_15-44-02 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_15-44-02 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/ipTreatmentPackageByName/ORTHOPAIDICS/Package%201] [IPTreatmentOfferingClient#getIPTreatmentPackageByName(AilmentCategory,String,String)]: [{"timestamp":"2021-03-10T10:45:57.859+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6556 bytes)]
+2021-03-10_15-44-02 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_15-44-02 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - pod2-authlb-1487844017.us-east-2.elb.amazonaws.com executing GET http://pod2-authlb-1487844017.us-east-2.elb.amazonaws.com/ipTreatment/getAllTreatmentPlan
+2021-03-10_16-34-16 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_16-34-16 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/ipTreatmentPackages] [IPTreatmentOfferingClient#getAllIPTreatmentPackage(String)]: [{"timestamp":"2021-03-10T11:04:48.926+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6523 bytes)]
+2021-03-10_16-34-16 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_16-34-16 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T11:10:22.550+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_16-52-05 [http-nio-8500-exec-10] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_16-52-05 [http-nio-8500-exec-10] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T11:22:54.379+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_16-52-05 [http-nio-8500-exec-10] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_16-52-05 [http-nio-8500-exec-10] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/ipTreatmentPackages] [IPTreatmentOfferingClient#getAllIPTreatmentPackage(String)]: [{"timestamp":"2021-03-10T11:24:14.055+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6523 bytes)]
+2021-03-10_16-55-37 [http-nio-8500-exec-2] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_16-55-37 [http-nio-8500-exec-2] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T11:26:04.627+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_16-55-37 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_16-55-37 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T11:40:00.232+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_16-55-37 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_16-55-37 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T11:41:15.154+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_16-55-37 [http-nio-8500-exec-7] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_16-55-37 [http-nio-8500-exec-7] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T11:47:06.476+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_17-27-47 [http-nio-8500-exec-3] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-27-47 [http-nio-8500-exec-3] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T12:02:15.507+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_17-37-13 [http-nio-8500-exec-8] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-37-13 [http-nio-8500-exec-8] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T12:08:21.220+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_17-37-13 [http-nio-8500-exec-2] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-37-13 [http-nio-8500-exec-2] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T12:10:32.770+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_17-37-13 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-37-13 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T12:13:21.584+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_17-49-21 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRegisterController': Unsatisfied dependency expressed through field 'client'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cts.portal.feign.AuthorisingClient': FactoryBean threw exception on object creation; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete MethodDeclaration
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cts.portal.PortalMicroserviceApplication.main(PortalMicroserviceApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cts.portal.feign.AuthorisingClient': FactoryBean threw exception on object creation; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete MethodDeclaration
+
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1884)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:267)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete MethodDeclaration
+
+	at com.cts.portal.feign.AuthorisingClient.<clinit>(AuthorisingClient.java:21)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sun.proxy.$Proxy114.<clinit>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.reflect.Proxy.newProxyInstance(Proxy.java:739)
+	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:65)
+	at feign.Feign$Builder.target(Feign.java:269)
+	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:351)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:315)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169)
+	... 36 common frames omitted
+2021-03-10_17-51-12 [http-nio-8500-exec-2] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-51-12 [http-nio-8500-exec-2] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T12:21:44.287+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_17-51-12 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-51-12 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - [500] during [GET] to [http://localhost:8100/ipTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-03-10T12:43:56.961+00:00","status":500,"error":"Internal Server Error","trace":"feign.FeignException$InternalServerError: [500] during [POST] to [http://localhost:8400/auth/authoriz... (6507 bytes)]
+2021-03-10_17-51-12 [http-nio-8500-exec-10] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-51-12 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-51-12 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_17-51-12 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - pod2-authlb-1487844017.us-east-2.elb.amazonaws.com executing GET http://pod2-authlb-1487844017.us-east-2.elb.amazonaws.com/ipTreatment/getAllTreatmentPlan
+2021-03-10_17-51-12 [http-nio-8500-exec-10] ERROR c.c.p.e.GlobalExceptionHandler - pod2-authlb-1487844017.us-east-2.elb.amazonaws.com executing GET http://pod2-authlb-1487844017.us-east-2.elb.amazonaws.com/ipTreatment/getAllTreatmentPlan
+2021-03-10_17-51-12 [http-nio-8500-exec-6] ERROR c.c.p.e.GlobalExceptionHandler - pod2-authlb-1487844017.us-east-2.elb.amazonaws.com executing GET http://pod2-authlb-1487844017.us-east-2.elb.amazonaws.com/ipTreatment/getAllTreatmentPlan
+2021-03-10_19-28-37 [http-nio-8500-exec-5] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_19-28-37 [http-nio-8500-exec-5] ERROR c.c.p.e.GlobalExceptionHandler - pod2-authlb-1487844017.us-east-2.elb.amazonaws.com executing GET http://pod2-authlb-1487844017.us-east-2.elb.amazonaws.com/insure/getAllInsurerDetail
+2021-03-10_20-01-31 [http-nio-8500-exec-5] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_20-01-31 [http-nio-8500-exec-5] ERROR c.c.p.e.GlobalExceptionHandler - [400] during [GET] to [http://localhost:8300/insure/getAllInsurerDetail] [InsuranceClaimClient#getAllInsurers(String)]: [{"timeStamp":"10-03-2021 08:22:44","message":"nullnull executing POST http://nullnull/authorize"}]
+2021-03-10_20-24-42 [http-nio-8500-exec-7] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-03-10_20-24-42 [http-nio-8500-exec-7] ERROR c.c.p.e.GlobalExceptionHandler - [400] during [GET] to [http://localhost:8300/insure/getAllInsurerDetail] [InsuranceClaimClient#getAllInsurers(String)]: [{"timeStamp":"10-03-2021 08:32:58","message":"nullnull executing POST http://nullnull/authorize"}]

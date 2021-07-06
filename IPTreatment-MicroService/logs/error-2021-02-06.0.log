@@ -1,0 +1,66 @@
+2021-02-06_17-23-02 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-06_17-23-02 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-06_17-23-02 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-06_17-23-11 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_17-23-11 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_17-23-11 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_17-23-11 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_19-08-04 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cts.iptreatment.IpTreatmentMicroServiceApplication.main(IpTreatmentMicroServiceApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:617)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:216)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:136)
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:125)
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:316)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:66)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:39)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:72)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:287)
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:159)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:286)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1083)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:286)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:72)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:58)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	... 22 common frames omitted
+2021-02-06_19-11-19 [http-nio-8200-exec-2] ERROR c.c.i.e.GlobalExceptionHandler - Patient is Alreagy Registered for treatment
+2021-02-06_20-03-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_20-03-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_20-03-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_20-03-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_20-04-21 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-06_20-04-21 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-06_20-04-21 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-06_20-04-36 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_20-04-36 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_20-04-36 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-06_20-04-36 [main] ERROR c.c.i.e.GlobalExceptionHandler - message

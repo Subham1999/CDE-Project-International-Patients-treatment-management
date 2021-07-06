@@ -1,0 +1,96 @@
+2021-02-03_06-45-50 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_06-45-50 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_06-45-50 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_06-59-11 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_06-59-11 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_06-59-11 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-06-54 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-06-54 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-06-54 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-23-44 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-23-44 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-23-44 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-25-17 [main] ERROR c.c.i.e.GlobalExceptionHandler - User name is null
+2021-02-03_07-27-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-27-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-27-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-27-53 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-27-53 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-33-39 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-33-39 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-34-00 [HikariPool-1 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.setCurrentCommand(Session.java:1343)
+	at org.h2.engine.Session.startStatementWithinTransaction(Session.java:1853)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:363)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:725)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:711)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-02-03_07-49-34 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-49-34 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-49-46 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-49-46 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-49-46 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-51-38 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-51-38 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-51-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-51-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-51-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-51-55 [HikariPool-1 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.isOpen(Session.java:1303)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1639)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:363)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:725)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:711)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-02-03_07-54-48 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-54-48 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-03_07-54-59 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-54-59 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_07-54-59 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-03_08-34-50 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8200 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8200 or configure this application to listen on another port.
+

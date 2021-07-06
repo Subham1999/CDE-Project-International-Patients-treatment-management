@@ -1,0 +1,2 @@
+2021-02-08_09-51-01 [http-nio-8500-exec-5] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-02-08_09-51-01 [http-nio-8500-exec-5] ERROR c.c.p.e.GlobalExceptionHandler - [400] during [GET] to [http://pod2-authlb-1487844017.us-east-2.elb.amazonaws.com/insure/getAllInsurerDetail] [InsuranceClaimClient#getAllInsurers(String)]: []

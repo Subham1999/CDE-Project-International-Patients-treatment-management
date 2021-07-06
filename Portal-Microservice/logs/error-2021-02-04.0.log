@@ -1,0 +1,89 @@
+2021-02-04_09-36-11 [http-nio-8500-exec-10] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-02-04_09-36-11 [http-nio-8500-exec-10] ERROR c.c.p.e.GlobalExceptionHandler - [404] during [GET] to [http://localhost:8100/IPTreatmentOffering/specialists] [IPTreatmentOfferingClient#getAllSpecialist(String)]: [{"timestamp":"2021-02-04T04:06:42.133+00:00","status":404,"error":"Not Found","message":"No message available","path":"/IPTreatmentOffering/specialists"}]
+2021-02-04_14-07-21 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-02-04_14-07-21 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - Read timed out executing GET http://localhost:8300/getAllInsurerDetail
+2021-02-04_17-00-06 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8500 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8500 or configure this application to listen on another port.
+
+2021-02-04_19-46-06 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRegisterResource': Unsatisfied dependency expressed through field 'client'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cts.portal.feign.AuthorisingClient': FactoryBean threw exception on object creation; nested exception is java.lang.NoClassDefFoundError: AuthorizationException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cts.portal.PortalMicroserviceApplication.main(PortalMicroserviceApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.cts.portal.feign.AuthorisingClient': FactoryBean threw exception on object creation; nested exception is java.lang.NoClassDefFoundError: AuthorizationException
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:176)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1884)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:267)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 25 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: AuthorizationException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3167)
+	at java.base/java.lang.Class.privateGetPublicMethods(Class.java:3192)
+	at java.base/java.lang.Class.getMethods(Class.java:1905)
+	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:56)
+	at feign.ReflectiveFeign$ParseHandlersByName.apply(ReflectiveFeign.java:151)
+	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:49)
+	at feign.Feign$Builder.target(Feign.java:269)
+	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:351)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:315)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:169)
+	... 36 common frames omitted
+Caused by: java.lang.ClassNotFoundException: AuthorizationException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 48 common frames omitted
+2021-02-04_19-46-09 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-02-04_19-46-09 [http-nio-8500-exec-4] ERROR c.c.p.e.GlobalExceptionHandler - Connection refused: connect executing GET http://localhost:8100/ipTreatmentOffering/specialists
+2021-02-04_19-46-09 [http-nio-8500-exec-3] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-02-04_19-46-09 [http-nio-8500-exec-3] ERROR c.c.p.e.GlobalExceptionHandler - Connection refused: connect executing GET http://localhost:8100/ipTreatmentOffering/specialists
+2021-02-04_19-46-09 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-02-04_19-46-09 [http-nio-8500-exec-9] ERROR c.c.p.e.GlobalExceptionHandler - Connection refused: connect executing GET http://localhost:8100/ipTreatmentOffering/specialists

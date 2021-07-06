@@ -1,0 +1,116 @@
+2021-02-04_12-09-12 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-09-20 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-09-20 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-14-59 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-14-59 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-15-08 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-15-08 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-27-39 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-27-39 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-27-47 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-27-47 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-28-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-28-45 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-28-54 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-28-54 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-29-26 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-29-26 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-29-26 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-29-34 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-29-34 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-32-05 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-32-05 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-32-05 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-32-14 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-32-14 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-32-14 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-32-14 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-32-54 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-32-54 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-32-54 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-33-02 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-33-02 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-33-02 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-33-02 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-34-34 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-34-34 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-34-34 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-34-43 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-34-43 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-34-43 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-34-43 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-34-56 [HikariPool-1 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.isOpen(Session.java:1303)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1639)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:363)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:725)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:711)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-02-04_12-57-01 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-57-01 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-57-01 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_12-57-09 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-57-09 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-57-09 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-57-09 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-59-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-59-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-59-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_12-59-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-00-41 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-00-41 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-00-41 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-00-41 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-01-24 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-01-24 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-01-24 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-01-24 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-02-20 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-02-20 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-02-20 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-02-26 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-02-26 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-02-26 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-02-26 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-02-48 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-02-48 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-02-48 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-02-56 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-02-56 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-02-56 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-02-56 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-03-41 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-03-41 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-03-41 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-03-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-03-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-03-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-03-49 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_13-35-38 [http-nio-8200-exec-2] ERROR c.c.i.e.GlobalExceptionHandler - Patient is Alreagy Registered for treatment
+2021-02-04_13-35-38 [http-nio-8200-exec-6] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-35-38 [http-nio-8200-exec-5] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_13-35-38 [http-nio-8200-exec-1] ERROR c.c.i.e.GlobalExceptionHandler - Patient is Alreagy Registered for treatment
+2021-02-04_22-20-09 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_22-20-09 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_22-20-09 [main] ERROR c.c.i.e.GlobalExceptionHandler - Not allowed
+2021-02-04_22-20-32 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_22-20-32 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_22-20-32 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_22-20-32 [main] ERROR c.c.i.e.GlobalExceptionHandler - message
+2021-02-04_22-27-32 [http-nio-8200-exec-1] ERROR c.c.i.e.GlobalExceptionHandler - Patient is Alreagy Registered for treatment

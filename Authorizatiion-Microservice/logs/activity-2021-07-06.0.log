@@ -1,0 +1,406 @@
+08-56-42_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 996 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+08-56-42_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+08-56-42_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+08-56-42_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08-56-42_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+08-56-42_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5752 ms
+08-56-42_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08-56-42_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+08-56-42_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+08-56-42_06-07-2021 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+08-56-42_06-07-2021 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08-56-42_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08-56-42_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08-56-42_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c85d7b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b49f790, org.springframework.security.web.header.HeaderWriterFilter@5ea85850, org.springframework.security.web.authentication.logout.LogoutFilter@8eec3e4, com.cts.authorization.config.JwtRequestFilter@3aaad5f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5001106e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8e253bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b6f162e, org.springframework.security.web.session.SessionManagementFilter@7ea64756, org.springframework.security.web.access.ExceptionTranslationFilter@24e691b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ce332dd]
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+08-56-42_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+08-56-42_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+08-56-42_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+08-56-42_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+08-56-42_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+08-56-42_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 13.959 seconds (JVM running for 16.349)
+09-01-05_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 6800 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-01-05_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interfaces.
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-01-05_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-01-05_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-01-05_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-01-05_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4657 ms
+09-01-05_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09-01-05_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-01-05_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-01-05_06-07-2021 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+09-01-05_06-07-2021 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09-01-05_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-01-05_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-01-05_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+09-01-05_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-01-05_06-07-2021 [restartedMain] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-01-05_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09-01-05_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09-07-41_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-07-41_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 163 ms. Found 1 JPA repository interfaces.
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-07-41_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-07-41_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-07-41_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-07-41_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5466 ms
+09-07-41_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09-07-41_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-07-41_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-07-41_06-07-2021 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+09-07-41_06-07-2021 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09-07-41_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-07-41_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.cts.authorization.Hook com.cts.authorization.AuthorizatiionMicroserviceApplication.hook
+09-07-41_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@557884c7, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bda4176, org.springframework.security.web.header.HeaderWriterFilter@35d5ff8e, org.springframework.security.web.authentication.logout.LogoutFilter@7c06d261, com.cts.authorization.config.JwtRequestFilter@51a36073, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dbc0981, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4eec0671, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5068ef8e, org.springframework.security.web.session.SessionManagementFilter@5b2ca457, org.springframework.security.web.access.ExceptionTranslationFilter@48edc231, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45b30c24]
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-07-41_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+09-07-41_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-07-41_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-07-41_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-07-41_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-07-41_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 14.914 seconds (JVM running for 17.437)
+09-07-41_06-07-2021 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09-07-41_06-07-2021 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-07-41_06-07-2021 [Thread-6] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-07-41_06-07-2021 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09-07-41_06-07-2021 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09-08-26_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-08-26_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-08-26_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-08-26_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-08-26_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-08-26_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1297 ms
+09-08-26_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+09-08-26_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-08-26_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-08-26_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-08-26_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.cts.authorization.Hook com.cts.authorization.AuthorizatiionMicroserviceApplication.hook
+09-08-26_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@512b45bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@38a70196, org.springframework.security.web.header.HeaderWriterFilter@5c4b94a6, org.springframework.security.web.authentication.logout.LogoutFilter@1a090a29, com.cts.authorization.config.JwtRequestFilter@307b5de0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64051147, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@646b57c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20d44ddd, org.springframework.security.web.session.SessionManagementFilter@1a8c977d, org.springframework.security.web.access.ExceptionTranslationFilter@40b399bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ab344cf]
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-08-26_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-08-26_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-08-26_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-08-26_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-08-26_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 3.171 seconds (JVM running for 52.074)
+09-08-26_06-07-2021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09-08-47_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-08-47_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-08-47_06-07-2021 [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09-08-47_06-07-2021 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-08-47_06-07-2021 [Thread-11] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-08-47_06-07-2021 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+09-08-47_06-07-2021 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interfaces.
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1637 ms
+09-08-47_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+09-08-47_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-08-47_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-08-47_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-08-47_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-08-47_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f5266cf, org.springframework.security.web.context.SecurityContextPersistenceFilter@31d940bd, org.springframework.security.web.header.HeaderWriterFilter@aee4eba, org.springframework.security.web.authentication.logout.LogoutFilter@34c67e60, com.cts.authorization.config.JwtRequestFilter@5c1cbdd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d7dcc5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@751ed8d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19c76dd2, org.springframework.security.web.session.SessionManagementFilter@29c260ec, org.springframework.security.web.access.ExceptionTranslationFilter@4acecad9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7007848]
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-08-47_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-08-47_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-08-47_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-08-47_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 3.569 seconds (JVM running for 73.913)
+09-08-47_06-07-2021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09-08-47_06-07-2021 [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09-08-47_06-07-2021 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-08-47_06-07-2021 [Thread-11] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-08-47_06-07-2021 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+09-08-47_06-07-2021 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+09-08-51_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-08-51_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-08-51_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-08-51_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-08-51_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-08-51_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1183 ms
+09-08-51_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+09-08-51_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-08-51_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-08-51_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-08-51_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-08-51_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34d79fce, org.springframework.security.web.context.SecurityContextPersistenceFilter@761e5a79, org.springframework.security.web.header.HeaderWriterFilter@2fae6e91, org.springframework.security.web.authentication.logout.LogoutFilter@330be00, com.cts.authorization.config.JwtRequestFilter@771fe15e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44574c7a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18516887, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f840601, org.springframework.security.web.session.SessionManagementFilter@4fda0da4, org.springframework.security.web.access.ExceptionTranslationFilter@2522fb23, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cb0eaf7]
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-08-51_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-08-51_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-08-51_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-08-51_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-08-51_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 2.837 seconds (JVM running for 77.193)
+09-08-51_06-07-2021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09-08-51_06-07-2021 [http-nio-8400-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-08-51_06-07-2021 [http-nio-8400-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09-08-51_06-07-2021 [http-nio-8400-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+09-08-51_06-07-2021 [http-nio-8400-exec-4] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-08-51_06-07-2021 [http-nio-8400-exec-4] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-08-51_06-07-2021 [http-nio-8400-exec-4] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-08-51_06-07-2021 [http-nio-8400-exec-4] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-08-51_06-07-2021 [http-nio-8400-exec-5] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-08-51_06-07-2021 [http-nio-8400-exec-5] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-08-51_06-07-2021 [Thread-21] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09-08-51_06-07-2021 [Thread-21] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-08-51_06-07-2021 [Thread-21] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-08-51_06-07-2021 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+09-08-51_06-07-2021 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+09-18-08_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-18-08_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-18-08_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-18-08_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-18-08_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-18-08_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1674 ms
+09-18-08_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+09-18-08_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-18-08_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-18-08_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-18-08_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-18-08_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25867239, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a108538, org.springframework.security.web.header.HeaderWriterFilter@709c55e8, org.springframework.security.web.authentication.logout.LogoutFilter@630e3e44, com.cts.authorization.config.JwtRequestFilter@200544a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35bed7b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@271ff7fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21ead370, org.springframework.security.web.session.SessionManagementFilter@8ba4ac1, org.springframework.security.web.access.ExceptionTranslationFilter@605208c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f6ae0b6]
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-18-08_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-18-08_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-18-08_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-18-08_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-18-08_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 3.969 seconds (JVM running for 634.549)
+09-18-08_06-07-2021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09-18-08_06-07-2021 [http-nio-8400-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-18-08_06-07-2021 [http-nio-8400-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09-18-08_06-07-2021 [http-nio-8400-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+09-18-08_06-07-2021 [http-nio-8400-exec-5] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-5] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [http-nio-8400-exec-6] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-6] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [http-nio-8400-exec-7] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-7] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [http-nio-8400-exec-7] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-7] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [http-nio-8400-exec-8] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-8] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [http-nio-8400-exec-9] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-9] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [http-nio-8400-exec-10] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-10] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [http-nio-8400-exec-2] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-2] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [http-nio-8400-exec-1] INFO  c.c.a.service.JwtUserDetailsService - User found
+09-18-08_06-07-2021 [http-nio-8400-exec-1] INFO  c.c.a.service.JwtUserDetailsService - user successfully located
+09-18-08_06-07-2021 [Thread-32] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09-18-08_06-07-2021 [Thread-32] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-18-08_06-07-2021 [Thread-32] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-18-08_06-07-2021 [Thread-32] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+09-18-08_06-07-2021 [Thread-32] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+09-30-56_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-30-56_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-30-56_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-30-56_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-30-56_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-30-56_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1592 ms
+09-30-56_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+09-30-56_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-30-56_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-30-56_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-30-56_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-30-56_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7adf401e, org.springframework.security.web.context.SecurityContextPersistenceFilter@fd9fafd, org.springframework.security.web.header.HeaderWriterFilter@61119ce2, org.springframework.security.web.authentication.logout.LogoutFilter@6318d6b4, com.cts.authorization.config.JwtRequestFilter@3c994708, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b90d355, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@360ba249, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cc896b7, org.springframework.security.web.session.SessionManagementFilter@5298ea0b, org.springframework.security.web.access.ExceptionTranslationFilter@443215f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@243a08ee]
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-30-56_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-30-56_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-30-56_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-30-56_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-30-56_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 3.652 seconds (JVM running for 1402.723)
+09-30-56_06-07-2021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09-30-56_06-07-2021 [http-nio-8400-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-30-56_06-07-2021 [http-nio-8400-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09-30-56_06-07-2021 [http-nio-8400-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+09-30-56_06-07-2021 [Thread-39] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09-30-56_06-07-2021 [Thread-39] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-30-56_06-07-2021 [Thread-39] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-30-56_06-07-2021 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+09-30-56_06-07-2021 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+09-32-35_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-32-35_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-32-35_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-32-35_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-32-35_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-32-35_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1556 ms
+09-32-35_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+09-32-35_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-32-35_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-32-35_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-32-35_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-32-35_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@756bdbfc, org.springframework.security.web.context.SecurityContextPersistenceFilter@3954c532, org.springframework.security.web.header.HeaderWriterFilter@196e6eb6, org.springframework.security.web.authentication.logout.LogoutFilter@157fe70e, com.cts.authorization.config.JwtRequestFilter@41dc06bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17bc5a65, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dcd8dfa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27b4922a, org.springframework.security.web.session.SessionManagementFilter@28fbeb82, org.springframework.security.web.access.ExceptionTranslationFilter@3073c6a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13d72e9a]
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-32-35_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-32-35_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-32-35_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-32-35_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-32-35_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 3.479 seconds (JVM running for 1500.979)
+09-32-35_06-07-2021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09-32-35_06-07-2021 [http-nio-8400-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-32-35_06-07-2021 [http-nio-8400-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09-32-35_06-07-2021 [http-nio-8400-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+09-32-35_06-07-2021 [Thread-46] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09-32-35_06-07-2021 [Thread-46] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-32-35_06-07-2021 [Thread-46] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-32-35_06-07-2021 [Thread-46] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+09-32-35_06-07-2021 [Thread-46] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+09-39-14_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-39-14_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-39-14_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-39-14_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-39-14_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-39-14_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1395 ms
+09-39-14_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+09-39-14_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-39-14_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-39-14_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-39-14_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-39-14_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c7853b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@39ae96b9, org.springframework.security.web.header.HeaderWriterFilter@28ed10c4, org.springframework.security.web.authentication.logout.LogoutFilter@1852964, com.cts.authorization.config.JwtRequestFilter@4d1c236b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74b46804, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@341f2d66, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37d8fdb9, org.springframework.security.web.session.SessionManagementFilter@7ee0da96, org.springframework.security.web.access.ExceptionTranslationFilter@5d221ea6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@370ac97f]
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-39-14_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-39-14_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-39-14_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-39-14_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-39-14_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 3.209 seconds (JVM running for 1899.758)
+09-39-14_06-07-2021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09-39-14_06-07-2021 [http-nio-8400-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-39-14_06-07-2021 [http-nio-8400-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09-39-14_06-07-2021 [http-nio-8400-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+09-39-14_06-07-2021 [Thread-53] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09-39-14_06-07-2021 [Thread-53] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-39-14_06-07-2021 [Thread-53] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09-39-14_06-07-2021 [Thread-53] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+09-39-14_06-07-2021 [Thread-53] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+09-46-32_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Starting AuthorizatiionMicroserviceApplication using Java 15.0.2 on DESKTOP-74FJ0Q8 with PID 1420 (C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice\target\classes started by Admin in C:\Users\Admin\work\CDE-Project-International-Patients-treatment-management\CDE-Project-International-Patients-treatment-management\Authorizatiion-Microservice)
+09-46-32_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - No active profile set, falling back to default profiles: default
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5cbd0892-26b5-38f5-9f05-74db816b5583
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8400 (http)
+09-46-32_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8400"]
+09-46-32_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-46-32_06-07-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+09-46-32_06-07-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1466 ms
+09-46-32_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+09-46-32_06-07-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09-46-32_06-07-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-46-32_06-07-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09-46-32_06-07-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09-46-32_06-07-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@775e67b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@65b1f754, org.springframework.security.web.header.HeaderWriterFilter@5a7ef248, org.springframework.security.web.authentication.logout.LogoutFilter@72424d15, com.cts.authorization.config.JwtRequestFilter@6e44ffe5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d413367, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60807435, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52347068, org.springframework.security.web.session.SessionManagementFilter@44d78186, org.springframework.security.web.access.ExceptionTranslationFilter@499c2885, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a0f1b2c]
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09-46-32_06-07-2021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8400"]
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8400 (http) with context path ''
+09-46-32_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09-46-32_06-07-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09-46-32_06-07-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09-46-32_06-07-2021 [restartedMain] INFO  c.c.a.AuthorizatiionMicroserviceApplication - Started AuthorizatiionMicroserviceApplication in 3.303 seconds (JVM running for 2338.065)
+09-46-32_06-07-2021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09-46-32_06-07-2021 [http-nio-8400-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-46-32_06-07-2021 [http-nio-8400-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09-46-32_06-07-2021 [http-nio-8400-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms

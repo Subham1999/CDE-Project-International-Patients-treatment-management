@@ -1,0 +1,2 @@
+2021-03-10_18-54-30 [http-nio-8200-exec-2] ERROR c.c.i.e.GlobalExceptionHandler - pod2-ipoffering-ld-1381076981.us-east-2.elb.amazonaws.com executing GET http://pod2-ipoffering-ld-1381076981.us-east-2.elb.amazonaws.com/ipTreatmentOffering/ipTreatmentPackageByName/ORTHOPAIDICS/Package%202
+2021-03-10_19-32-28 [http-nio-8200-exec-4] ERROR c.c.i.e.GlobalExceptionHandler - Patient is Alreagy Registered for treatment

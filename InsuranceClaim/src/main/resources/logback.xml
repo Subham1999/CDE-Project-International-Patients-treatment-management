@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<timestamp key="myTimeStamp" datePattern="yyy-MM-dd HH:mm:ss"/>
+	
+	<appender name="STDOUT" class = "ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${myTimeStamp} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<root level = "INFO">
+		<appender-ref ref = "STDOUT"/>
+	</root>
+</configuration>
