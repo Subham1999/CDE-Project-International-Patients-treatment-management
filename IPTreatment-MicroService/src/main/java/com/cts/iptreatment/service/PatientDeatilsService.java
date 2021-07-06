@@ -21,7 +21,8 @@ import com.cts.iptreatment.repository.TreatmentPlanRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Service @Slf4j
+@Service
+@Slf4j
 public class PatientDeatilsService {
 	@Autowired
 	private PatientDetailsRepository patientRepo;
@@ -29,27 +30,38 @@ public class PatientDeatilsService {
 	private IPTreatmentOfferingClient ipTreatmentOfferingClient;
 	@Autowired
 	private TreatmentPlanRepository treatment;
-	//To save the patient details who registered
+
+	// To save the patient details who registered
 	public PatientDetails savePatientDetails(PatientDetails patientDetials) {
 		return patientRepo.save(patientDetials);
 	}
-	//To save the treatment plan of a patient
+
+	// To save the treatment plan of a patient
 	public TreatmentPlan saveTreatmentPlan(String token, PatientDetails patientDetials) throws Exception {
-		if(checkIfPatientAlreadyRegistered(patientDetials.getName())) {
+		if (checkIfPatientAlreadyRegistered(patientDetials.getName())) {
 			throw new PatientNameAlreadyExistsException("Patient is Alreagy Registered for treatment");
 		}
+		
+		System.err.println(patientDetials);
+		// Handle NULL LocalDate Error By Hardcoding
+		if (patientDetials.getTreatmentCommencementDate() == null) {
+			patientDetials.setTreatmentCommencementDate(LocalDate.now());
+		}
+		
 		TreatmentPlan treatmentPlan = new TreatmentPlan();
 		treatmentPlan.setPackageName(patientDetials.getTretmentPackageName());
-		IPTreatmentPackage detail = getPackageByName(token, patientDetials.getAilment(), patientDetials.getTretmentPackageName());
+		IPTreatmentPackage detail = getPackageByName(token, patientDetials.getAilment(),
+				patientDetials.getTretmentPackageName());
 		treatmentPlan.setCost(detail.getPackageDetail().getCost());
 		treatmentPlan.setTestDetails(detail.getPackageDetail().getTestDetails());
 		LocalDate commencementDate = patientDetials.getTreatmentCommencementDate();
 		treatmentPlan.setTreatmentCommenceDate(commencementDate);
-		treatmentPlan.setTreatmentEndDate(calculateEndDate(commencementDate,detail.getPackageDetail().getTreatmentDuration()));
+		treatmentPlan.setTreatmentEndDate(
+				calculateEndDate(commencementDate, detail.getPackageDetail().getTreatmentDuration()));
 		treatmentPlan.setSpecialist(findASpecialist(token, patientDetials.getAilment(), "package 1").getName());
 		treatmentPlan.setPatientDetails(patientDetials);
 		treatmentPlan.setStatus("In-Progress");
-		log.info("TreatmentPlan Detail "+treatmentPlan);
+		log.info("TreatmentPlan Detail " + treatmentPlan);
 		return treatment.save(treatmentPlan);
 	}
 
@@ -62,29 +74,35 @@ public class PatientDeatilsService {
 		return today.plus(week, ChronoUnit.WEEKS);
 	}
 
-	public SpecialistDetail findASpecialist(String token, AilmentCategory ailment, String packageString) throws Exception {
+	public SpecialistDetail findASpecialist(String token, AilmentCategory ailment, String packageString)
+			throws Exception {
 		List<SpecialistDetail> specialists = ipTreatmentOfferingClient.getAllSpecialist(token).stream()
 				.filter(s -> s.getAreaOfExpertise().equals(ailment)).collect(Collectors.toList());
 		// When the patient chooses a package 1 then a junior specialist is allocated
 		if (packageString.equals("Package 1"))
 			return specialists.stream()
-					.collect(Collectors.minBy(Comparator.comparingInt(SpecialistDetail::getExperienceInYears))).orElse(new SpecialistDetail());
+					.collect(Collectors.minBy(Comparator.comparingInt(SpecialistDetail::getExperienceInYears)))
+					.orElse(new SpecialistDetail());
 		// When the patient chooses a package 2 then a senior specialist is allocated
 		else
 			return specialists.stream()
-					.collect(Collectors.maxBy(Comparator.comparingInt(SpecialistDetail::getExperienceInYears))).orElse(new SpecialistDetail());
+					.collect(Collectors.maxBy(Comparator.comparingInt(SpecialistDetail::getExperienceInYears)))
+					.orElse(new SpecialistDetail());
 	}
+
 	// This method returns a list of all treatment plans
 	public List<TreatmentPlan> getAllTreatmentPlan() {
 		return treatment.findAll();
 	}
-	//To check if the patient already exists in treatment plans
+
+	// To check if the patient already exists in treatment plans
 	public boolean checkIfPatientAlreadyRegistered(String patientName) {
 		return getAllTreatmentPlan().stream().anyMatch(t -> t.getPatientDetails().getName().equals(patientName));
 	}
-	//To update the status of a treatment plan of a patient
+
+	// To update the status of a treatment plan of a patient
 	public TreatmentPlan updateStatus(TreatmentPlan treatmentPlan) {
 		return treatment.save(treatmentPlan);
 	}
-	
+
 }

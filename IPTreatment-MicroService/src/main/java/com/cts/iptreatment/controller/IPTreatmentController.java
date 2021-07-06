@@ -35,7 +35,9 @@ public class IPTreatmentController {
 	public TreatmentPlan formulateTimetable(@RequestBody PatientDetails patientDetails,
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader) throws Exception {
 		System.out.println("Inside Formulate Timetable==================================================");
-		if (client.authorizeTheRequest(requestTokenHeader)) {
+		ResponseEntity<String> authorizeTheRequest = client.authorizeTheRequest(requestTokenHeader);
+		int statusCode = authorizeTheRequest.getStatusCodeValue();
+		if (statusCode >= 200 && statusCode < 300) {
 			service.savePatientDetails(patientDetails);
 			return service.saveTreatmentPlan(requestTokenHeader, patientDetails);
 		} else {
@@ -52,7 +54,9 @@ public class IPTreatmentController {
 	public List<TreatmentPlan> getAllTreatmentPlan(
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader)
 			throws AuthorizationException {
-		if (client.authorizeTheRequest(requestTokenHeader))
+		ResponseEntity<String> authorizeTheRequest = client.authorizeTheRequest(requestTokenHeader);
+		int statusCode = authorizeTheRequest.getStatusCodeValue();
+		if (statusCode >= 200 && statusCode < 300)
 			return service.getAllTreatmentPlan();
 		else {
 			throw new AuthorizationException("Not allowed");
@@ -68,9 +72,11 @@ public class IPTreatmentController {
 	@PostMapping("/updateTreatmentPlan")
 	public TreatmentPlan updateStatus(@RequestBody TreatmentPlan treatmentPlan,
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader) throws Exception {
-		if (client.authorizeTheRequest(requestTokenHeader))
+		ResponseEntity<String> authorizeTheRequest = client.authorizeTheRequest(requestTokenHeader);
+		int statusCode = authorizeTheRequest.getStatusCodeValue();
+		if (statusCode >= 200 && statusCode < 300) {
 			return service.updateStatus(treatmentPlan);
-		else {
+		} else {
 			throw new AuthorizationException("Not allowed");
 		}
 	}

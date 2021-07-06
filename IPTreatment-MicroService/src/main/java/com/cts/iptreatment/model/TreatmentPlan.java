@@ -37,6 +37,6 @@ public class TreatmentPlan {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate treatmentEndDate;
 	private String status;
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.MERGE)
 	private PatientDetails patientDetails;
 }
