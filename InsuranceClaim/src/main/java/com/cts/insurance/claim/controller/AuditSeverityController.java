@@ -33,7 +33,9 @@ public class AuditSeverityController {
 	public List<InsurerDetail> getAllInsurers(
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader)
 			throws AuthorizationException {
-		if (authorizingClient.authorizeTheRequest(requestTokenHeader)) {
+		ResponseEntity<String> authorizeTheRequest = authorizingClient.authorizeTheRequest(requestTokenHeader);
+		int statusCode = authorizeTheRequest.getStatusCodeValue();
+		if (statusCode >= 200 && statusCode < 300) {
 			return auditSevertyService.getAllInsurers();
 		} else {
 			throw new AuthorizationException("Not allowed");
@@ -45,7 +47,9 @@ public class AuditSeverityController {
 	public InsurerDetail getInsurerByPackageName(@PathVariable String packageName,
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader)
 			throws AuthorizationException {
-		if (authorizingClient.authorizeTheRequest(requestTokenHeader)) {
+		ResponseEntity<String> authorizeTheRequest = authorizingClient.authorizeTheRequest(requestTokenHeader);
+		int statusCode = authorizeTheRequest.getStatusCodeValue();
+		if (statusCode >= 200 && statusCode < 300) {
 			return auditSevertyService.getInsurerByInsurerPackageName(packageName);
 		} else {
 			throw new AuthorizationException("Not allowed");
@@ -56,7 +60,9 @@ public class AuditSeverityController {
 	@PostMapping("/initiateClaim")
 	public double initiateClaim(@RequestBody InitiateClaim claim,
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader) throws Exception {
-		if (authorizingClient.authorizeTheRequest(requestTokenHeader)) {
+		ResponseEntity<String> authorizeTheRequest = authorizingClient.authorizeTheRequest(requestTokenHeader);
+		int statusCode = authorizeTheRequest.getStatusCodeValue();
+		if (statusCode >= 200 && statusCode < 300) {
 			return initiateClaimService.initiateClaim(claim, requestTokenHeader);
 		} else {
 			throw new AuthorizationException("Not allowed");
