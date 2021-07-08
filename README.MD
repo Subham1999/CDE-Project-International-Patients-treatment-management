@@ -15,13 +15,12 @@ International Patients Treatment Management System is a web application to list 
 
 ## Technologies used
 
-    Java 11 
+    Java 8
     Spring Data Access JPA 
     Spring Boot 
     Spring MVC 
     Spring REST 
     Microservices 
-    AWS 
     Lombok Logging 
     Spring security 
     Junit, Mockito, MockMVC 
