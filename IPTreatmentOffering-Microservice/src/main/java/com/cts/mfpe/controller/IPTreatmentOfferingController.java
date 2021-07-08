@@ -113,7 +113,7 @@ public class IPTreatmentOfferingController {
 	}
 
 	@GetMapping("/specialistsByExpertise/{areaOfExpertise}")
-	public ResponseEntity<?> getSpecialistsByAreaOfExpertise(
+	public ResponseEntity<List<SpecialistDetail>> getSpecialistsByAreaOfExpertise(
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader,
 			@PathVariable String areaOfExpertise) throws AuthorizationException {
 

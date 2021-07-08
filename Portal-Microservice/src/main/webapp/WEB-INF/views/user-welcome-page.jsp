@@ -23,7 +23,7 @@
 		<div class="section grid">
 			<%@ include file="user-fragments/side-navbar.jsp"%>
 			<div class="content">
-				<h1>Welcome ${name}</h1>
+				<h1>Welcome User</h1>
 			</div>
 		</div>
 		<%@ include file="fragments/footer.jsp"%>

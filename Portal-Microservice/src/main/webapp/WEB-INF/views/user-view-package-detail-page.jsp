@@ -1,3 +1,5 @@
+<%@page import="com.cts.portal.model.IPTreatmentPackage"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
@@ -34,8 +36,19 @@
 		<%@ include file="fragments/header.jsp"%>
 
 		<div class="section grid">
-		
+
+			<%
+			String role = (String) session.getAttribute("roles");
+			if (role != null && role.equalsIgnoreCase("ROLE_ADMIN")) {
+			%>
 			<%@ include file="admin-fragments/admin-sidebar.jsp"%>
+			<%
+			} else if (role != null && role.equalsIgnoreCase("ROLE_USER")) {
+			%>
+			<%@ include file="user-fragments/side-navbar.jsp"%>
+			<%
+			}
+			%>
 			<div class="content list-container">
 				<h1>Our In-patient Services</h1>
 				<div class="container">
@@ -65,6 +78,21 @@
 									<td>${p.getPackageDetail().getCost()}</td>
 									<td>${p.getPackageDetail().getTreatmentDuration()}</td>
 								</tr>
+								<%
+								if (role != null && role.equalsIgnoreCase("ROLE_ADMIN")) {
+								%>
+								<tr>
+									<td colspan="6">
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-sm btn-outline-primary"
+											style="width: 20%" data-toggle="modal"
+											data-target="#${p.getTreatmentPackageId()}modal">Update
+											Package</button>
+									</td>
+								</tr>
+								<%
+								}
+								%>
 							</c:forEach>
 						</tbody>
 					</table>
@@ -74,8 +102,102 @@
 		</div>
 
 		<%@ include file="fragments/footer.jsp"%>
-		
+
 	</div>
 </body>
 
 </html>
+
+<%
+List<IPTreatmentPackage> ipTreatmentPackages = (List<IPTreatmentPackage>) request
+		.getAttribute("ipTreatmentPackagekageName");
+
+if (ipTreatmentPackages != null) {
+
+	for (IPTreatmentPackage ipTreatmentPackage : ipTreatmentPackages) {
+%>
+
+<%-- <%=ipTreatmentPackages%> --%>
+<div class="modal fade"
+	id="<%=ipTreatmentPackage.getTreatmentPackageId()%>modal" tabindex="-1"
+	role="dialog"
+	aria-labelledby="<%=ipTreatmentPackage.getTreatmentPackageId()%>modalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title"
+					id="<%=ipTreatmentPackage.getTreatmentPackageId()%>modalLabel">Modal
+					title</h5>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="/portal/updateTreatmentPackage" method="post">
+					<table class="table">
+						<tr>
+							<td>Treatment Package Id</td>
+							<td class="text-mute"><input type="number"
+								readonly="readonly" name="treatmentPackageId"
+								value="<%=ipTreatmentPackage.getTreatmentPackageId()%>"></td>
+						</tr>
+						<tr>
+							<td>Ailment Category</td>
+							<td class="text-mute"><input type="text"
+								name="ailmentCategory" readonly="readonly"
+								value="<%=ipTreatmentPackage.getAilmentCategory().toString()%>">
+							</td>
+						</tr>
+						<tr>
+							<td>package id</td>
+							<td class="text-mute"><input type="number" name="pid"
+								readonly="readonly"
+								value="<%=ipTreatmentPackage.getPackageDetail().getPid()%>">
+							</td>
+						</tr>
+						<tr>
+							<!-- Can be changed -->
+							<td>package test duration (weeks)</td>
+							<td class="text-mute"><input type="number"
+								name="treatmentDuration" max="15" min="1"
+								value="<%=ipTreatmentPackage.getPackageDetail().getTreatmentDuration()%>">
+							</td>
+						</tr>
+						<tr>
+							<td>package test package name</td>
+							<td class="text-mute"><input type="text"
+								name="treatmentPackageName" readonly="readonly"
+								value="<%=ipTreatmentPackage.getPackageDetail().getTreatmentPackageName()%>"></td>
+						</tr>
+						<tr>
+							<td>package test details</td>
+							<td class="text-mute"><input type="text" name="testDetails"
+								readonly="readonly"
+								value="<%=ipTreatmentPackage.getPackageDetail().getTestDetails()%>"></td>
+						</tr>
+						<tr>
+							<!-- Can be changed -->
+							<td>package test cost</td>
+							<td class="text-mute"><input type="number" max="150000"
+								min="100" name="cost"
+								value="<%=ipTreatmentPackage.getPackageDetail().getCost()%>">
+							</td>
+						</tr>
+					</table>
+					<button type="submit" class="btn btn-sm btn-outline-danger"
+						name="button">change</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%
+}
+}
+%>

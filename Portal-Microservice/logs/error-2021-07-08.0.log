@@ -1,0 +1,2 @@
+2021-07-08_10-44-40 [http-nio-8500-exec-8] ERROR c.c.p.e.GlobalExceptionHandler - handles by handleFeignStatusException
+2021-07-08_10-44-40 [http-nio-8500-exec-8] ERROR c.c.p.e.GlobalExceptionHandler - [400] during [PUT] to [http://localhost:8100/ipTreatmentOffering/updatePackage/0] [IPTreatmentOfferingClient#updatePackage(String,int,IPTreatmentPackage)]: [packageId mismatch]

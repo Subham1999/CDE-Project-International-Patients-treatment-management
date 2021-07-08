@@ -27,7 +27,7 @@
 		<div class="section grid">
 			<%@ include file="admin-fragments/admin-sidebar.jsp"%>
 			<div class="content">
-			<h1>Welcome Admin</h1>
+				<h1>Welcome Admin</h1>
 			</div>
 		</div>
 		<%@ include file="fragments/footer.jsp"%>

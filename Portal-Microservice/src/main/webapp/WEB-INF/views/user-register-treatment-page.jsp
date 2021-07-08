@@ -33,7 +33,18 @@
 	<div class="main-container-register">
 		<%@ include file="fragments/header.jsp"%>
 		<div class="section grid">
+			<%
+			String role = (String) session.getAttribute("roles");
+			if (role != null && role.equalsIgnoreCase("ROLE_ADMIN")) {
+			%>
 			<%@ include file="admin-fragments/admin-sidebar.jsp"%>
+			<%
+			} else if (role != null && role.equalsIgnoreCase("ROLE_USER")) {
+			%>
+			<%@ include file="user-fragments/side-navbar.jsp"%>
+			<%
+			}
+			%>
 			<div class="content list-container">
 				<h1>Our In-patient Services</h1>
 				<div class="container">
@@ -42,7 +53,8 @@
 						<div class="form-group">
 							<form:label path="name">Your Name:</form:label>
 							<form:input path="name" class="form-control" id="name"
-								type="text" required="required" pattern="[a-zA-Z]+([\s][a-zA-Z]*)*"
+								type="text" required="required"
+								pattern="[a-zA-Z]+([\s][a-zA-Z]*)*"
 								data-error="Please enter a valid Name." />
 						</div>
 						<div class="form-group">

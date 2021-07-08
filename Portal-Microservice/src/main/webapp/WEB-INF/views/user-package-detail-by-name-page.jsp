@@ -30,7 +30,18 @@
 	<div class="main-container-register">
 		<%@ include file="fragments/header.jsp"%>
 		<div class="section grid">
+			<%
+			String role = (String) session.getAttribute("roles");
+			if (role != null && role.equalsIgnoreCase("ROLE_ADMIN")) {
+			%>
 			<%@ include file="admin-fragments/admin-sidebar.jsp"%>
+			<%
+			} else if (role != null && role.equalsIgnoreCase("ROLE_USER")) {
+			%>
+			<%@ include file="user-fragments/side-navbar.jsp"%>
+			<%
+			}
+			%>
 			<div class="content list-container">
 				<h1>Find In-patient Services</h1>
 				<div class="container">

@@ -22,6 +22,7 @@ import com.cts.portal.model.InsurerDetail;
 @RequestMapping("/portal")
 public class InsuranceClaimController {
 
+//	private static final String = null;
 	@Autowired
 	private InsuranceClaimClient client;
 	
@@ -33,7 +34,8 @@ public class InsuranceClaimController {
 	 */
 	@GetMapping(value = "/getAllInsurerDetail")
 	public ModelAndView getAllInsurerDetail(HttpServletRequest request) throws Exception {
-		
+		String header = (String) request.getSession().getAttribute("Authorization");
+		System.err.println(header);
 		if ((String) request.getSession().getAttribute("Authorization") == null) {
 			ModelAndView errorPage = new ModelAndView("error-page401");
 			return errorPage;

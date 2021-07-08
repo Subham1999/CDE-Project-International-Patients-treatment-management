@@ -8,16 +8,17 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 import com.cts.portal.exception.AuthorizationException;
 import com.cts.portal.model.JwtRequest;
+import com.cts.portal.model.JwtResponse;
 
 @FeignClient(name = "Authorizatiion-Microservice", url = "${auth.URL}")
-
 public interface AuthorisingClient {
-    
+
 	@PostMapping(value = "/authenticate")
-	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws AuthorizationException;
+	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest)
+			throws AuthorizationException;
 
 	@PostMapping(value = "/authorize")
-	public boolean authorizeTheRequest(
+	public ResponseEntity<String> authorizeTheRequest(
 			@RequestHeader(value = "Authorization", required = true) String requestTokenHeader);
-	
+
 }
